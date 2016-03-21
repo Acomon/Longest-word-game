@@ -1,11 +1,14 @@
-<h1>score</h1>
+<h1>Letters and numbers</h1>
+
+<p><%= " Welcome to the longest word-game!" %></p>
+<p><%=  "___________________________________________________" %></p>
 
 <h1>Your result</h1><br>
 
 <p>Your word: <%= params[:attempt] %></p>
 <p>Time taken: <%= @result[:time] %></p>
 <p>Translation: <%= @result[:translation] %></p>
-<p>Your score: <%= @result[:score] %></p>
+<p>Your score: <%= @result[:score].round(2) %></p>
 <p>Message: <%= @result[:message] %></p>
 
 <p>______________________________________________________</p>

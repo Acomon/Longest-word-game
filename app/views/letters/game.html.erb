@@ -2,7 +2,9 @@
 
 <p><%= " Welcome to the longest word-game!" %></p>
 <h2><%=  "Here is your grid :" %></h2>
-<h3><%=  @grid.join(" - ") %></h3>
+<%  @grid.each do |letter| %>
+<%=  letter + " - " %>
+<% end  %>
 <p><%=  "___________________________________________________" %></p>
 
 <p><%=  "What's your best shot ?" %></p>
