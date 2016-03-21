@@ -1,0 +1,18 @@
+<h1>Letters and numbers</h1>
+
+<p><%= " Welcome to the longest word-game!" %></p>
+<h2><%=  "Here is your grid :" %></h2>
+<h3><%=  @grid.join(" - ") %></h3>
+<p><%=  "___________________________________________________" %></p>
+
+<p><%=  "What's your best shot ?" %></p>
+<% @start_time = Time.now %>
+
+<form action="/score">
+	<label for="question">your attempt</label>
+	<input type="text" id="question" name="attempt" placeholder="english word">
+	<input type="hidden" name="grid" value="<%=@grid%>">
+	<input type="hidden" name="start_time" value="<%=@start_time%>">
+	<input type="submit" value="Go on!">
+</form>
+

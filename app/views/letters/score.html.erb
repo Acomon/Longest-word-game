@@ -1,0 +1,13 @@
+<h1>score</h1>
+
+<h1>Your result</h1><br>
+
+<p>Your word: <%= params[:attempt] %></p>
+<p>Translation: <%= @result[:translation] %></p>
+<p>Your score: <%= @result[:score] %></p>
+<p>Message: <%= @result[:message] %></p>
+
+<p>______________________________________________________</p>
+<br>
+
+<p><%= link_to '<button type="button" class:"margin btn btn-primary active">Play again</button>'.html_safe, game_path %></p>
