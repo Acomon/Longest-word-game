@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-root to: 'letters#score'
+root to: 'letters#game'
 
   get 'game', to: 'letters#game'
 
